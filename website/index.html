@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Validate JSON Files</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Validator</h1>
+
+        <form id="upload-form">
+            <!-- Input to select local JSON files -->
+            <input type="file" id="file-input" accept=".json" required>
+            <!-- Button to upload the file to the server -->
+            <button type="submit" id="upload-button" style="display: block;">Upload File</button>
+        </form>
+
+        <!-- Button to validate files uploaded to the server -->
+        <button id="validate-button" style="display: block;">Validate Uploaded Files</button>
+        <!-- Container to display status messages -->
+        <div id="response"></div>
+        <!-- Container to display validation results -->
+        <div id="validation-results"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
